@@ -1,0 +1,16 @@
+url
+https://people.scs.carleton.ca/~davidmckenney/fruits5/N-616.html
+title
+N-616
+frequencies
+apricot
+1.0
+/frequencies
+pageOutgoing
+https://people.scs.carleton.ca/~davidmckenney/fruits5/N-196.html
+/pageOutgoing
+pageIncoming
+https://people.scs.carleton.ca/~davidmckenney/fruits5/N-196.html
+/pageIncoming
+PageRank
+3.63637633691694E-4
