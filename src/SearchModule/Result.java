@@ -1,5 +1,4 @@
 package SearchModule;
-import java.util.Comparator;
 
 public class Result implements SearchResult{
     private String title;

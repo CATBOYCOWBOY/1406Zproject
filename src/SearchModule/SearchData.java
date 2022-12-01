@@ -1,7 +1,9 @@
 package SearchModule;
-
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
 
 public class SearchData extends PageUtils { //Search methods by File object, not URL
     public SearchData () {}

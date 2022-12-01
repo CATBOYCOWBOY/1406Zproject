@@ -1,6 +1,7 @@
 package SearchModule;
+
 import java.io.File;
-import java.util.*;
+import java.util.List;
 
 public class ProjectTesterImp implements ProjectTester{ //implementation of search by URL, but base methods are in SearchModule.SearchData
 
