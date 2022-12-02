@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisplayModule.SearchController">
+   <Button layoutX="152.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#switchToCrawlPane" text="SWITCH TO CRAWL MENU" />
+   <Button layoutX="387.0" layoutY="64.0" mnemonicParsing="false" onMouseClicked="#SearchQuery" text="SEARCH" />
+   <ListView fx:id="ResultsView" layoutX="153.0" layoutY="152.0" prefHeight="248.0" prefWidth="295.0" />
+   <TextField fx:id="SearchBar" layoutX="151.0" layoutY="64.0" prefHeight="25.0" prefWidth="223.0" promptText="Look for..." />
+   <Label layoutX="152.0" layoutY="109.0" prefHeight="25.0" prefWidth="94.0" text="RESULTS:" />
+   <RadioButton layoutX="237.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#pageRankToggle" text="TOGGLE PAGERANK" />
+</AnchorPane>

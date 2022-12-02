@@ -3,7 +3,7 @@ package SearchModule;
 import java.io.*;
 import java.util.*;
 
-public class Crawler extends SearchData{
+class Crawler extends SearchData{
     String seed;
     Crawler (String initURL) {
         seed = initURL;
@@ -11,8 +11,6 @@ public class Crawler extends SearchData{
     public void startCrawl () { //Similar setup to previous project, except IDF and PageRank functionality
         File file = new File("src/PageData"); //are nested classes
         File Data = new File("src/Data");
-        wipeData(Data);
-        wipeData(file);
         HashMap<String, Boolean> visited = new HashMap<>();
 
         String[] pageOutGoing = parsePage(seed);
@@ -35,7 +33,7 @@ public class Crawler extends SearchData{
         PageRankFinder rank = new PageRankFinder(file, 0.0001);
         rank.findPagesRank();
     }
-    private String[] parsePage (String url) {
+    private String[] parsePage (String url) { //conversion of website data to organized array format
         int wordCount = 0;
         String title;
         String[] contents = splitPage(url);
@@ -85,6 +83,7 @@ public class Crawler extends SearchData{
         storePage(store, url);
         return output;
     }
+
     private void storePage (String[] page, String url) { //Destination folder Data is meant to be cleared before this method called //in progress
         String fileName = makeURLTitle(url);
         File file = new File(String.format("src/PageData/%s", fileName));
@@ -175,6 +174,7 @@ public class Crawler extends SearchData{
     }
 
     private class PageRankFinder {
+        //since class will only be used in this scope, it is pointless to not nest it into the crawler
         File data; //folder in which page data is contained, not a specific file
         double threshold;
 

@@ -1,30 +1,35 @@
 package SearchModule;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProjectTesterImp implements ProjectTester{ //implementation of search by URL, but base methods are in SearchModule.SearchData
 
+    //SearchData object is able to return data on a page based on corresponding filename
     SearchData searcher;
 
     public ProjectTesterImp() { //Initializes a searcher object on creation, which can search for information based on file.
         searcher = new SearchData();
     }
 
+
+    //getFileByURL method "converts" String format URL to File format file that searcher can read
     private File getFileByURL (String url) { //conversion of URL format to file format, returns null if no file exists
         return new File("src/PageData/" + PageUtils.makeURLTitle(url));
     }
 
     public void initialize() {
         File PageData = new File("src/PageData");
-        File Data = new File("src/PageData");
+        File Data = new File("src/Data");
         PageUtils.wipeData(PageData);
         PageUtils.wipeData(Data);
     }
 
-
+    //initializes a crawler object, wipe data from previous usage of method
     public void crawl(String seedURL) {
         Crawler crawler = new Crawler(seedURL);
+        initialize();
         crawler.startCrawl();
     }
 

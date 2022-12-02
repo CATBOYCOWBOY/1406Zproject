@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class PageUtils { //class of mostly string or file/list operations. Meant to be a general helper class to clear up some boilerplate
+class PageUtils { //class of mostly string or file/list operations. Meant to be a general helper class to clear up some boilerplate
     protected String[] getWords(File file) { //returns array of words in the <p> tags in a page
         int counter = 0;
         String[] lines = fileRead(file);
@@ -79,7 +79,7 @@ public class PageUtils { //class of mostly string or file/list operations. Meant
         }
         return title;
     }
-    public static String processURL(String base, String link) { //Takes in a base url and a relative URL, determines if relative or absolute link, creates url.
+    public String processURL(String base, String link) { //Takes in a base url and a relative URL, determines if relative or absolute link, creates url.
         StringBuilder url = new StringBuilder();
         String process = base.split(">")[0];
         process = process.replace("\"", "");

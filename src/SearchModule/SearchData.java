@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-public class SearchData extends PageUtils { //Search methods by File object, not URL
+class SearchData extends PageUtils { //Search methods by File object, not URL
     public SearchData () {}
     public List<String> getPageOutgoing(File file) {
         String[] lines = fileRead(file);
@@ -103,23 +103,24 @@ public class SearchData extends PageUtils { //Search methods by File object, not
 
     public List<SearchResult> searchTerms(String query, boolean boost, int X) { //returns unsorted list of best X pages
         HashMap<String, Integer> queryWords = getWords(query);
-        double[] queryVector = convertQueryVector(queryWords, query.split(" ").length);
+        double[] queryVector = convertQueryVector(queryWords, query.split(" ").length); //assign query vector once
         List<SearchResult> bestResults = new ArrayList<>();
         File pages = new File("src/PageData");
         File[] allPages = pages.listFiles();
         assert allPages != null;
 
+        //iterating through all pages and assigning a (cosine similarity) score to it
         for (File e : allPages) {
             double[] pageVector = convertPageVector(queryWords, e);
             double score = getCosineScore(queryVector, pageVector, e, boost);
-            if (bestResults.size() < X) {
+            if (bestResults.size() < X) { //By default, first X pages will be added in
                 bestResults.add(new Result(getTitle(e), getURL(e), score) {
                 });
             } else {
-                double worstScore = 2.0;
+                double worstScore = 2.0; //worstScore default to 2.0 because maximum possible score is 1, therefore covers all cases
                 int weakestResult = 0;
-                for (int i = 0; i < bestResults.size(); i++) {
-                    if (bestResults.get(i).getScore() < worstScore) {
+                for (int i = 0; i < bestResults.size(); i++) { //find index of page with weakest score for elimination on
+                    if (bestResults.get(i).getScore() < worstScore) { //next page with a higher score
                         worstScore = bestResults.get(i).getScore();
                         weakestResult = i;
                     }
@@ -130,7 +131,7 @@ public class SearchData extends PageUtils { //Search methods by File object, not
                 }
             }
         }
-        return bestResults;
+        return bestResults; //unsorted ArrayList of top X scoring pages, 10 by default
     }
 
     private double[] convertQueryVector (HashMap<String, Integer> queryWords, int queryLength) {
