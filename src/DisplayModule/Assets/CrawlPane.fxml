@@ -6,13 +6,14 @@
 
 <AnchorPane prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DisplayModule.SearchController">
    <children>
-      <Button layoutX="220.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#switchToHomeMenu" prefHeight="25.0" prefWidth="160.0" text="RETURN TO HOME MENU" />
-      <Button layoutX="220.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#crawlDataSet" prefHeight="39.0" prefWidth="160.0" text="CRAWL">
+      <Button layoutX="217.0" layoutY="378.0" mnemonicParsing="false" onMouseClicked="#switchToHomeMenu" prefHeight="25.0" prefWidth="160.0" text="RETURN TO HOME MENU" />
+      <Button layoutX="217.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#crawlDataSet" prefHeight="39.0" prefWidth="160.0" text="CRAWL">
          <font>
-            <Font name="Comic Sans MS" size="12.0" />
+            <Font name="Calibri" size="12.0" />
          </font>
       </Button>
-      <Label layoutX="217.0" layoutY="182.0" prefHeight="17.0" prefWidth="167.0" text="Choose dataset to crawl from:" />
-      <TextField fx:id="CrawlBar" layoutX="217.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label layoutX="217.0" layoutY="171.0" prefHeight="17.0" prefWidth="167.0" text="Crawl Dataset:" />
+      <TextField fx:id="CrawlBar" layoutX="217.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" promptText="ENTER SEED URL" />
+      <Label layoutX="300.0" layoutY="114.0" />
    </children>
 </AnchorPane>

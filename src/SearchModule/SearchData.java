@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-class SearchData extends PageUtils { //Search methods by File object, not URL
+class SearchData extends PageUtils { //Object can search by File, not URL. Conversion done in ProjectTesterImp.
     public SearchData () {}
     public List<String> getPageOutgoing(File file) {
         String[] lines = fileRead(file);
