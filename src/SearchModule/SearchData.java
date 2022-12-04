@@ -114,7 +114,7 @@ class SearchData extends PageUtils { //Object can search by File, not URL. Conve
             double[] pageVector = convertPageVector(queryWords, e);
             double score = getCosineScore(queryVector, pageVector, e, boost);
             if (bestResults.size() < X) { //By default, first X pages will be added in
-                bestResults.add(new Result(getTitle(e), getURL(e), score) {
+                bestResults.add(new Result(getTitle(e), score) {
                 });
             } else {
                 double worstScore = 2.0; //worstScore default to 2.0 because maximum possible score is 1, therefore covers all cases
@@ -126,7 +126,7 @@ class SearchData extends PageUtils { //Object can search by File, not URL. Conve
                     }
                 }
                 if (score > worstScore) {
-                    bestResults.set(weakestResult, new Result(getTitle(e), getURL(e), score) {
+                    bestResults.set(weakestResult, new Result(getTitle(e), score) {
                     });
                 }
             }

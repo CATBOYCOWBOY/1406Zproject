@@ -1,6 +1,7 @@
 package SearchModule;
 
 import java.io.File;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 

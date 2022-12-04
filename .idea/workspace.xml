@@ -4,7 +4,19 @@
     <list default="true" id="3c865bdb-45cc-4ca0-825c-d6385655971e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DisplayModule/Assets/CrawlPane.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayModule/Assets/CrawlPane.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DisplayModule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayModule/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DisplayModule/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayModule/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 0Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 1Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 2Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 3Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 4Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 5Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 6Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 7Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 8Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PageData/http SlashSlashpeopleDotscsDotcarletonDotcaSlash davidmckenneySlashtinyfruitsSlashN 9Dothtml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchModule/ProjectTesterImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchModule/ProjectTesterImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchModule/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchModule/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchModule/SearchData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchModule/SearchData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
